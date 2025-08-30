@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio personal</title>
+    <!-- Vinculación con CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ========================= */
+        /* ESTILO GENERAL DEL BODY */
+        /* ========================= */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* ========================= */
+        /* HEADER - ENCABEZADO PRINCIPAL */
+        /* ========================= */
+        header {
+            background: linear-gradient(135deg, #000000, #3c1361); /* degradado de fondo */
+            text-align: center; /* centra el contenido */
+            padding: 30px 20px; /* espacio interno */
+            color: white; /* color de texto */
+        }
+        header img {
+            border-radius: 15px; /* esquinas redondeadas */
+            margin-bottom: 15px; /* espacio inferior */
+        }
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 28px; /* tamaño del título */
+        }
+        header h2 {
+            margin: 0;
+            font-weight: normal; /* subtítulo más ligero */
+            font-size: 20px;
+        }
+
+        /* ========================= */
+        /* MENÚ DE NAVEGACIÓN */
+        /* ========================= */
+        nav {
+            background: #3c1361; /* color de fondo del menú */
+            text-align: center;
+            padding: 12px 0;
+        }
+        nav a {
+            color: white; /* color de enlaces */
+            text-decoration: none; /* sin subrayado */
+            margin: 0 20px; /* espacio entre enlaces */
+            font-weight: bold;
+            transition: 0.3s; /* transición suave */
+        }
+        nav a:hover {
+            color: #fdd835; /* cambio de color al pasar el mouse */
+        }
+
+        /* ========================= */
+        /* SECCIONES Y ARTÍCULOS */
+        /* ========================= */
+        section {
+            padding: 20px 50px; /* espacio interno de la sección */
+        }
+        article {
+            margin-bottom: 40px; /* espacio inferior entre artículos */
+            text-align: justify; /* justifica texto */
+            background: white; /* fondo blanco */
+            padding: 20px; /* padding interno */
+            border-radius: 15px; /* esquinas redondeadas */
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1); /* sombra ligera */
+        }
+        article h3 {
+            color: #3c1361; /* color del título del artículo */
+            margin-bottom: 15px;
+        }
+
+        /* ========================= */
+        /* IMAGENES DE PORTADA Y PERFIL */
+        /* ========================= */
+        /* Imagen principal circular */
+        .portada-img {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* círculo perfecto */
+            border: 5px solid #fff; /* borde blanco */
+            object-fit: cover; /* recorta proporcionalmente */
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* Imagen de perfil cuadrada */
+        .perfil-foto {
+            float: left; /* alineación a la izquierda */
+            margin: 0 20px 20px 0; /* margen alrededor */
+            width: 150px;
+            height: 150px;
+            border-radius: 10px; /* esquinas ligeramente redondeadas */
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* ========================= */
+        /* TABLAS DE INFORMACIÓN */
+        /* ========================= */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* unir bordes */
+            margin-top: 15px;
+        }
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        table th {
+            background: #3c1361;
+            color: white;
+        }
+        table tr:hover {
+            background: #f2f2f2; /* efecto al pasar el mouse */
+        }
+
+        /* ========================= */
+        /* GALERÍA DE IMÁGENES */
+        /* ========================= */
+        .galeria {
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* ========================= */
+        /* PIE DE PÁGINA */
+        /* ========================= */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* ========================= */
+        /* BOTÓN WHATSAPP FIJO */
+        /* ========================= */
+        .whatsapp-btn {
+            position: fixed; /* posición flotante */
+            bottom: 20px;
+            right: 20px;
+            background: #25D366; /* color de WhatsApp */
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1); /* efecto al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================= -->
+    <!-- ENCABEZADO -->
+    <!-- ========================= -->
+    <header>
+        <!-- Imagen de portada/banner -->
+        <img src="descargar.jpeg" alt="banner" width="40%" height="200px">
+        <!-- Título principal -->
+        <h1>Portafolio Ing. Nathaly Mejia Salamanca</h1>
+        <!-- Subtítulo -->
+        <h2>Web Developer</h2>
+    </header>
+
+    <!-- ========================= -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- ========================= -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="demo.html">Demostraciones</a>
+        <a href="formulario.html">Formulario para proyectos</a>
+    </nav>
+
+    <!-- ========================= -->
+    <!-- SECCIÓN PRINCIPAL -->
+    <!-- ========================= -->
+    <section>
+        <!-- PERFIL PROFESIONAL -->
+        <article id="perfil">
+            <h3>Perfil profesional</h3>
+            <img src="foto_perfil.jpg" alt="Foto de Nathaly Mejia" class="perfil-foto">
+            <p>
+               Soy estudiante de Ingeniería de Sistemas en la Corporación Universitaria Unicomfacauca, con proyección en el área de Internet de las Cosas (IoT) y el desarrollo de soluciones tecnológicas innovadoras. Me caracterizo por mi capacidad de aprendizaje continuo, trabajo en equipo y orientación a resultados. Busco aplicar mis conocimientos en programación, bases de datos y desarrollo de software para contribuir a proyectos que impulsen la transformación digital y generen impacto positivo en la sociedad.
+            </p>
+        </article>
+
+        <!-- FORMACIÓN ACADÉMICA -->
+        <article id="formacion">
+            <h3>Formación académica</h3>
+            <ul>
+                <li>Estudiante de Ingeniería de Sistemas - Corporación Universitaria Unicomfacauca</li>
+                <li>Cursos complementarios en desarrollo de aplicaciones, bases de datos y redes</li>
+                <li>Interés en especialización en Internet de las Cosas (IoT)</li>
+            </ul>
+        </article>
+
+        <!-- HABILIDADES -->
+        <article id="habilidades">
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Desarrollo de aplicaciones en Java y Python</li>
+                <li>Manejo de bases de datos con SQLite y MySQL</li>
+                <li>Conocimientos en HTML5, CSS y fundamentos de JavaScript</li>
+                <li>Conceptos en redes, sensórica y computación en la nube</li>
+                <li>Capacidad de aprendizaje autónomo y trabajo en equipo</li>
+            </ul>
+        </article>
+
+        <!-- EXPERIENCIA ACADÉMICA -->
+        <article id="experiencia">
+            <h3>Experiencia académica</h3>
+            <table>
+                <tr>
+                    <th>Proyecto</th>
+                    <th>Rol</th>
+                    <th>Tiempo</th>
+                </tr>
+                <tr>
+                    <td>Sistema de monitoreo IoT</td>
+                    <td>Desarrolladora</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Aplicaciones móviles de gestión</td>
+                    <td>Desarrolladora - CRUD en Java</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>Prototipo de soluciones IoT</td>
+                    <td>Investigadora</td>
+                    <td>2025</td>
+                </tr>
+            </table>
+        </article>
+
+        <!-- REDES SOCIALES -->
+        <article>
+            <h3>Sígueme en mis redes sociales</h3>
+            <ol>
+                <li><a href="https://www.facebook.com/nathaly.nnn.587">Facebook</a></li>
+                <li><a href="https://www.unicomfacauca.edu.co/programa/ingenieria-de-sistemas/">Unicomfacauca</a></li>
+            </ol>
+        </article>
+    </section>
+
+    <!-- ========================= -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ========================= -->
+    <footer>
+        <p>
+            Contacto: 
+            <a href="mailto:nathalymejia@unicomfacauca.edu.co" style="color: #fdd835;">nathalymejia@unicomfacauca.edu.co</a> | 
+            <a href="https://wa.me/573183932871" target="_blank" style="color: #25D366;">WhatsApp</a> | 
+            Tel: +57 318 393 2871
+        </p>
+    </footer>
+
+    <!-- BOTÓN FIJO WHATSAPP -->
+    <a href="https://wa.me/573183932871" target="_blank" class="whatsapp-btn">💬</a>
+
+</body>
+</html>

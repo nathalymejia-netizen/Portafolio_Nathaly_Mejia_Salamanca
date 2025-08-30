@@ -1,0 +1,266 @@
+/* ========================= */
+/* ESTILOS GENERALES */
+/* ========================= */
+/* Configuración básica de fuente, color de fondo y color de texto */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* ========================= */
+/* HEADER (ENCABEZADO) */
+/* ========================= */
+/* Fondo degradado, centrado de texto y padding */
+header {
+    background: linear-gradient(135deg, #000000, #3c1361);
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+}
+/* Imagen de portada/foto principal */
+header img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+/* Título principal */
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 28px;
+}
+/* Subtítulo o descripción */
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/* ========================= */
+/* MENÚ DE NAVEGACIÓN */
+/* ========================= */
+/* Barra de navegación con enlaces centrados */
+nav {
+    background: #3c1361;
+    text-align: center;
+    padding: 12px 0;
+}
+/* Estilo de los enlaces */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #fdd835; /* cambio de color al pasar el mouse */
+}
+
+/* ========================= */
+/* SECCIONES Y ARTÍCULOS */
+/* ========================= */
+/* Espaciado general para cada sección */
+section {
+    padding: 20px 50px;
+}
+/* Artículos dentro de cada sección */
+article {
+    margin-bottom: 40px;
+    text-align: justify;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+/* Títulos de artículos */
+article h3 {
+    color: #3c1361;
+    margin-bottom: 15px;
+}
+
+/* ========================= */
+/* EFECTO HOVER EN TODAS LAS SECCIONES */
+/* ========================= */
+/* Efecto al pasar el mouse sobre secciones o galerías */
+#perfil:hover,
+#formacion:hover,
+#habilidades:hover,
+#experiencia:hover,
+#formulario:hover,
+.galeria:hover,
+#redes:hover { /* agregado redes sociales */
+    background-color: #7878AB;
+    text-shadow: #7878AB 0px 0px 10px;
+    cursor: pointer;
+    transform: scale(1.02); /* zoom suave */
+}
+
+/* ========================= */
+/* IMÁGENES */
+/* ========================= */
+/* Imagen de portada principal */
+.portada-img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+/* Foto de perfil en artículos o secciones */
+.perfil-foto {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ========================= */
+/* TABLAS */
+/* ========================= */
+/* Tabla de datos generales */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+table th {
+    background: #3c1361;
+    color: white;
+}
+table tr:hover {
+    background: #f2f2f2;
+}
+
+/* ========================= */
+/* GALERÍA */
+/* ========================= */
+/* Estilo para imágenes de galería */
+.galeria img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+/* Zoom al pasar el mouse sobre la imagen */
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* ========================= */
+/* FORMULARIOS */
+/* ========================= */
+/* Etiquetas de los inputs */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+/* Inputs, textarea y select */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+/* Checkboxes y radio buttons */
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+/* Botón de enviar */
+input[type="submit"] {
+    background: #3c1361;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* Efecto hover en botón */
+input[type="submit"]:hover {
+    background: #fdd835;
+    color: #3c1361;
+}
+
+/* ========================= */
+/* REDES SOCIALES */
+/* ========================= */
+/* Contenedor de sección redes sociales */
+#redes {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Flex para alinear íconos horizontalmente */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+/* Estilo de los íconos */
+.redes-sociales a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+/* Zoom al pasar el mouse sobre el icono */
+.redes-sociales a img:hover {
+    transform: scale(1.1);
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ========================= */
+/* BOTÓN WHATSAPP */
+/* ========================= */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}

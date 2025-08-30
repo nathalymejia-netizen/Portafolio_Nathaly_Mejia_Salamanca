@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de proyectos</title>
+
+    <style>
+        /* ========================= */
+        /* ESTILO GENERAL DEL BODY */
+        /* ========================= */
+        body {
+            font-family: Arial, sans-serif; /* Fuente general */
+            margin: 0; /* Sin margen por defecto */
+            background: #f9f9f9; /* Color de fondo de la página */
+            color: #333; /* Color del texto */
+        }
+
+        /* ========================= */
+        /* HEADER - ENCABEZADO PRINCIPAL */
+        /* ========================= */
+        header {
+            background: linear-gradient(135deg, #000000, #3c1361); /* Fondo degradado */
+            text-align: center; /* Centrar contenido */
+            padding: 30px 20px; /* Espaciado interno */
+            color: white; /* Color del texto */
+        }
+        header img {
+            border-radius: 15px; /* Bordes redondeados para la imagen */
+            margin-bottom: 15px; /* Margen inferior */
+        }
+        header h1 {
+            margin: 10px 0 5px; /* Margen superior e inferior */
+            font-size: 28px; /* Tamaño del título principal */
+        }
+        header h2 {
+            margin: 0;
+            font-weight: normal; /* Subtítulo más ligero */
+            font-size: 20px;
+        }
+
+        /* ========================= */
+        /* MENÚ DE NAVEGACIÓN */
+        /* ========================= */
+        nav {
+            background: #3c1361; /* Color de fondo del menú */
+            text-align: center; /* Centrar enlaces */
+            padding: 12px 0; /* Espaciado superior e inferior */
+        }
+        nav a {
+            color: white; /* Color de los enlaces */
+            text-decoration: none; /* Quitar subrayado */
+            margin: 0 20px; /* Separación entre enlaces */
+            font-weight: bold;
+            transition: 0.3s; /* Transición para hover */
+        }
+        nav a:hover {
+            color: #fdd835; /* Color al pasar el mouse */
+        }
+
+        /* ========================= */
+        /* SECCIONES Y ARTÍCULOS */
+        /* ========================= */
+        section {
+            padding: 20px 50px; /* Espaciado de la sección */
+        }
+        article {
+            margin-bottom: 40px; /* Separación entre artículos */
+            text-align: left; /* Alineación del texto */
+            background: white; /* Fondo del artículo */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+        article h3 {
+            color: #3c1361; /* Color del título del artículo */
+            margin-bottom: 15px;
+        }
+
+        /* ========================= */
+        /* FORMULARIO */
+        /* ========================= */
+        label {
+            font-weight: bold; /* Negrita para etiquetas */
+            display: block; /* Cada etiqueta en línea separada */
+            margin-top: 10px; /* Margen superior */
+        }
+        input, textarea, select {
+            width: 100%; /* Ocupa todo el ancho disponible */
+            padding: 10px; /* Espaciado interno */
+            margin-top: 5px; /* Separación con la etiqueta */
+            border-radius: 8px; /* Bordes redondeados */
+            border: 1px solid #ccc; /* Borde gris */
+            font-size: 14px; /* Tamaño de fuente */
+        }
+        /* Ajuste para radio y checkbox */
+        input[type="radio"], input[type="checkbox"] {
+            width: auto; /* Tamaño estándar */
+            margin-right: 8px; /* Separación con el texto */
+        }
+        /* Botón de envío */
+        input[type="submit"] {
+            background: #3c1361; /* Color de fondo */
+            color: white; /* Color de texto */
+            border: none; /* Sin borde */
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer; /* Aparece mano al pasar */
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s; /* Transición para hover */
+        }
+        input[type="submit"]:hover {
+            background: #fdd835; /* Cambio de color al pasar mouse */
+            color: #3c1361;
+        }
+
+        /* ========================= */
+        /* PIE DE PÁGINA */
+        /* ========================= */
+        footer {
+            background: #222; /* Fondo oscuro */
+            color: white; /* Texto blanco */
+            padding: 20px; /* Espaciado */
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* ========================= */
+        /* BOTÓN FIJO WHATSAPP */
+        /* ========================= */
+        .whatsapp-btn {
+            position: fixed; /* Botón flotante */
+            bottom: 20px; /* Espacio inferior */
+            right: 20px; /* Espacio lateral */
+            background: #25D366; /* Color WhatsApp */
+            color: white;
+            border-radius: 50%; /* Forma circular */
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px; /* Tamaño del icono */
+            text-decoration: none; /* Sin subrayado */
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================= -->
+    <!-- ENCABEZADO -->
+    <!-- ========================= -->
+    <header>
+        <!-- Imagen del banner o portada -->
+        <img src="descargar.jpeg" alt="banner" width="40%" height="200px">
+        <!-- Título principal -->
+        <h1>Portafolio Ing. Nathaly Mejía Salamanca</h1>
+        <!-- Subtítulo -->
+        <h2>Web Developer</h2>
+    </header>
+
+    <!-- ========================= -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- ========================= -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="demo.html">Demostraciones</a>
+        <a href="formulario.html">Formulario para proyectos</a>
+    </nav>
+
+    <!-- ========================= -->
+    <!-- SECCIÓN DEL FORMULARIO -->
+    <!-- ========================= -->
+    <section>
+        <article id="formulario">
+            <h3>Cuéntanos sobre tu próximo proyecto</h3>
+            <form action="">
+                <!-- Campo para nombre -->
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <!-- Selección de tratamiento -->
+                <label>Le podemos decir:</label>
+                <input type="radio" name="tratamiento" value="joven"> Joven
+                <input type="radio" name="tratamiento" value="senor"> Señor
+                <input type="radio" name="tratamiento" value="senorita"> Señorita
+                <input type="radio" name="tratamiento" value="senora"> Señora
+
+                <!-- Campo para correo -->
+                <label for="correo">Tu correo:</label>
+                <input type="email" name="correo" id="correo" required>
+
+                <!-- Campo para teléfono -->
+                <label for="telefono">Tu teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="+57 3183932871">
+
+                <!-- Empresa -->
+                <label for="empresa">Nombre de tu empresa (si aplica):</label>
+                <input type="text" name="empresa" id="empresa">
+
+                <!-- Ciudad / País -->
+                <label for="ciudad">Ciudad / País:</label>
+                <input type="text" name="ciudad" id="ciudad">
+
+                <!-- Tipo de producto a desarrollar -->
+                <label>¿Qué tipo de producto deseas que desarrollemos?</label>
+                <input type="checkbox" name="tipoApp" value="web"> Aplicación Web
+                <input type="checkbox" name="tipoApp" value="movil"> Aplicación móvil
+                <input type="checkbox" name="tipoApp" value="escritorio"> Aplicación de escritorio
+                <input type="checkbox" name="tipoApp" value="ai"> Modelo de inteligencia artificial
+                <input type="checkbox" name="tipoApp" value="iot"> Solución IoT
+
+                <!-- Presupuesto estimado -->
+                <label for="presupuesto">Presupuesto estimado (USD):</label>
+                <input type="number" name="presupuesto" id="presupuesto" min="100" step="50">
+
+                <!-- Fecha estimada -->
+                <label for="fecha">Fecha de entrega estimada:</label>
+                <input type="date" name="fecha" id="fecha">
+
+                <!-- Nivel de urgencia -->
+                <label for="urgencia">Nivel de urgencia:</label>
+                <select name="urgencia" id="urgencia">
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                    <option value="inmediata">¡Lo necesito ya!</option>
+                </select>
+
+                <!-- Descripción del proyecto -->
+                <label for="descripcion">Cuéntanos más sobre tu proyecto:</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="6"></textarea>
+
+                <!-- Adjuntar archivo opcional -->
+                <label for="archivo">Adjunta un archivo (opcional):</label>
+                <input type="file" name="archivo" id="archivo">
+
+                <!-- Aceptación de términos -->
+                <br>
+                <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
+
+                <!-- Botón de envío -->
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </section>
+    
+    <!-- ========================= -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ========================= -->
+    <footer>
+        <p>
+            Contacto: 
+            <a href="mailto:nathalymejia@unicomfacauca.edu.co" style="color: #fdd835;">nathalymejia@unicomfacauca.edu.co</a> | 
+            <a href="https://wa.me/573183932871" target="_blank" style="color: #25D366;">WhatsApp</a> | 
+            Tel: +57 318 393 2871
+        </p>
+    </footer>
+
+    <!-- ========================= -->
+    <!-- BOTÓN FIJO WHATSAPP -->
+    <!-- ========================= -->
+    <a href="https://wa.me/573183932871" target="_blank" class="whatsapp-btn">💬</a>
+
+</body>
+</html>
